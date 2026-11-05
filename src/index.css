@@ -1,5 +1,30 @@
 @import "tailwindcss";
 
-body{
-  font-family: ;
+/*
+ * Global design tokens from DESIGN.md.
+ * Page-specific styles that are not part of the design system live next to
+ * their page (e.g. src/pages/Login.css, src/pages/Dashboard.css).
+ */
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+
+  --color-canvas: #f7fafd;
+  --color-primary: #38bdf8;
+  --color-primary-strong: #0284c7;
+  --color-primary-soft: #e0f2fe;
+  --color-primary-softest: #f0f9ff;
+  --color-ink: #0f172a;
+  --color-body: #475569;
+  --color-mist: #94a3b8;
+  --color-line: #e2e8f0;
+  --color-success: #22c55e;
+  --color-streak: #f59e0b;
+  --color-danger: #ef4444;
+
+  --shadow-soft: 0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 12px rgba(56, 189, 248, 0.08);
+}
+
+body {
+  @apply bg-white font-sans text-ink antialiased;
 }
