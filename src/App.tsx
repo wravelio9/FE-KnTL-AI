@@ -2,7 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import AppShell from './components/layout/AppShell'
 import Login from './pages/Login/Login'
 import Dashboard from './pages/Dashboard/Dashboard'
-import Placeholder from './pages/Dashboard/Placeholder'
+import Placeholder from './pages/Placeholder'
 
 function App() {
   return (
